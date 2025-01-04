@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1e1e2f; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #29293d; /* Slightly lighter dark background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow under header */
+}
+
+header h1 {
+  font-family: 'Roboto', sans-serif; /* Modern, professional font */
+  color: #bb86fc; /* Highlight color for header */
+  font-size: 40px; /* Larger size for prominence */
+  letter-spacing: 1.5px; /* Subtle letter spacing for elegance */
+  font-weight: 700;
+  margin: 0;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #29293d; /* Dark background for contrast */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  margin: 40px auto;
+  max-width: 900px; /* Limit max width for better readability */
+}
+
+.about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circle for image */
+  border: 3px solid #bb86fc;
+  margin-top: 20px;
+}
+
+.about h2 .about h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.about p {
+  font-family: 'Open Sans', sans-serif;
+  color: #b0b0b0; /* Softer light text */
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.8;
+  font-size: 16px;
+  text-align: justify;
+  background-color: #333340; /* Slightly darker box for text */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for box */
+}
+
+
+/* Button Section */
+.button-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  color: #ffffff;
+  border: none;
+  padding: 20px 40px; /* More balanced padding */
+  margin: 15px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Animation on Click */
+button.animate {
+  animation: buttonClick 0.3s forwards;
+}
+
+@keyframes buttonClick {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5); /* Button grows */
+  }
+  100% {
+    transform: scale(1); /* Button returns to original size */
+  }
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #29293d;
+  color: #888888;
+  font-size: 14px;
+  margin-top: auto;
+  border-top: 1px solid #444444; /* Divider line between content and footer */
+}
+
+a {
+  color: #3bb7e0; /* Light blue color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: #205779; /* Slightly darker blue on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small Screens (max-width: 600px) */
+@media (max-width: 600px) {
+  footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+/* Medium Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 30px; /* Smaller header font */
+    letter-spacing: 1px; /* Adjust spacing */
+  }
+
+  .about img {
+    width: 100px; /* Smaller image */
+    height: 100px;
+  }
+
+  .about h2 {
+    font-size: 22px; /* Adjusted for smaller screens */
+  }
+
+  .about p {
+    font-size: 14px; /* Smaller text size */
+    line-height: 1.8; /* Increased line-height for better readability */
+    margin: 10px 20px; /* Added margin to prevent text from touching edges */
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align the buttons */
+  }
+
+  button {
+    width: 80%; /* Stretch buttons to fit smaller screens */
+    padding: 20px; /* Adjust padding */
+    font-size: 16px; /* Slightly smaller font */
+  }
+}
+
+/* Fun and School Container Adjustments */
+.fun-container h2,
+.school-container h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fun-container h2 span,
+.school-container h2 span {
+  font-size: 0.7em;
+  color: #b0b0b0;
+}
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #bb86fc; /* Soft purple */
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  font-size: 18px;
+  font-weight: bold; /* Making text stand out more */
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.back-button:hover {
+  background-color: #9c4fe4; /* Darker purple on hover */
+  transform: translateY(-2px); /* Button lifts on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+}
+
+.back-button:active {
+  transform: translateY(2px); /* Button presses down on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly lighter shadow */
+}

@@ -1,13 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; URL=https://www.linkedin.com/in/rahmiqbrown">
-    <link rel="canonical" href="https://www.linkedin.com/in/rahmiqbrown">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #1e1e2f; /* Dark background */
+      color: #e0e0e0; /* Light text */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #29293d; /* Slightly lighter dark background */
+    }
+    header h1 {
+      font-family: 'Roboto', sans-serif; /* Modern, professional font */
+      color: #bb86fc; /* Highlight color for header */
+      font-size: 40px; /* Larger size for prominence */
+      letter-spacing: 1.5px; /* Subtle letter spacing for elegance */
+      font-weight: 700;
+      margin: 0;
+    }
+
+    /* About Section */
+    .about {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%; /* Circle for image */
+      border: 3px solid #bb86fc;
+    }
+    .about h2 {
+      font-family: 'Roboto', sans-serif; /* Consistent with header */
+      color: #ffffff;
+      font-size: 28px; /* Slightly smaller than header for hierarchy */
+      font-weight: 700;
+      margin-top: 20px;
+    }
+    .about p {
+      font-family: 'Open Sans', sans-serif; /* Clean, readable font */
+      color: #b0b0b0; /* Softer light text */
+      max-width: 600px;
+      margin: 10px auto;
+      line-height: 1.8; /* Slightly increased for readability */
+      font-size: 16px; /* Standard size for body text */
+      text-align: justify; /* Neat alignment for paragraphs */
+    }
+
+    /* Button Section */
+    .button-container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    button {
+      background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+      color: #ffffff; /* Light text */
+      border: none; /* No border for a clean look */
+      padding: 30px 45px; /* Proportional padding */
+      margin: 15px;
+      border-radius: 25px; /* Fully rounded corners */
+      font-size: 18px; /* Balanced font size */
+      font-weight: bold; /* Professional, bold text */
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+      transform: translateY(-5px); /* Slight lift effect */
+      box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    }
+
+    /* Footer Section */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #29293d;
+      color: #888888;
+      font-size: 14px;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Mobile-specific styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 30px; /* Smaller header font */
+        letter-spacing: 1px; /* Adjust spacing */
+      }
+      .about img {
+        width: 100px; /* Smaller image */
+        height: 100px;
+      }
+      .about h2 {
+        font-size: 22px; /* Adjusted for smaller screens */
+      }
+      .about p {
+        font-size: 14px; /* Smaller text size */
+        line-height: 1.6; /* Slightly tighter spacing */
+      }
+      .button-container {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center align the buttons */
+      }
+      button {
+        width: 80%; /* Stretch buttons to fit smaller screens */
+        padding: 20px; /* Adjust padding */
+        font-size: 16px; /* Slightly smaller font */
+      }
+    }
+
+  </style>
 </head>
 <body>
-    <!-- Optional content for users who do not support meta refresh -->
-    <p>If you are not redirected, <a href="https://www.linkedin.com/in/rahmiqbrown">click here</a>.</p>
+
+  <!-- Header -->
+  <header>
+    <h1>Projects</h1>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <img src="profile.jpg" alt="Your Profile Picture">
+    <h2>About Me</h2>
+    <p>
+      I am a Junior Cybersecurity Major. I have a strong foundation in technical support and problem solving. As a former Technical Support Assistant, I have gained hands-on experience troubleshooting, configuring systems, and data analysis. This portfolio highlights some of the projects and tasks I have worked on over the years to demonstrate my skills and growth over the years.
+    </p>
+  </section>
+
+  <!-- Button Section -->
+  <section class="button-container">
+    <button onclick="window.location.href='work.html'">Work</button> 
+    <button onclick="window.location.href='school.html'">School</button>
+    <button onclick="window.location.href='fun.html'">Personal</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Rahmiq Brown Portfolio
+  </footer>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
